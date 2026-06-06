@@ -1,0 +1,48 @@
+# Environment — never commit secrets
+.env
+.env.local
+.env.production
+.env*.local
+
+# Resume (private — never commit raw data)
+data/resume.pdf
+data/*.pdf
+data/latency_log.jsonl
+data/latency_log_real.jsonl
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+
+# Node
+node_modules/
+.next/
+out/
+.vercel/
+
+# macOS
+.DS_Store
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+
+# Reports (generated)
+evals/report.json
+evals/report.pdf
+
+# Dev artifacts (not part of production)
+features.html

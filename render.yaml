@@ -1,0 +1,52 @@
+services:
+  # 1. FastAPI Backend (Voice LLM & RAG endpoint)
+  - type: web
+    name: anantha-persona-voice
+    env: python
+    region: oregon
+    plan: free
+    buildCommand: pip install -r apps/voice/requirements.txt
+    startCommand: PYTHONPATH=/opt/render/project/src uvicorn apps.voice.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: GOOGLE_GENERATIVE_AI_API_KEY
+        sync: false
+      - key: GEMINI_MODEL
+        value: gemini-2.0-flash
+      - key: PINECONE_API_KEY
+        sync: false
+      - key: PINECONE_INDEX
+        value: persona
+      - key: PINECONE_ENVIRONMENT
+        value: us-east-1
+      - key: CAL_API_KEY
+        sync: false
+      - key: CAL_EVENT_TYPE_ID
+        sync: false
+      - key: ELEVENLABS_API_KEY
+        sync: false
+      - key: ELEVENLABS_VOICE_ID
+        value: pNInz6obpgDQGcFmaJgB
+
+  # 2. Next.js Chat Frontend
+  - type: web
+    name: anantha-persona-chat
+    env: node
+    region: oregon
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: cd apps/chat && npm run start
+    envVars:
+      - key: GOOGLE_GENERATIVE_AI_API_KEY
+        sync: false
+      - key: GEMINI_MODEL
+        value: gemini-2.5-flash
+      - key: OPENROUTER_API_KEY
+        sync: false
+      - key: OPENROUTER_MODEL
+        value: google/gemini-2.5-flash
+      - key: RAG_SERVICE_URL
+        sync: false  # Needs to be set to the URL of the anantha-persona-voice service
+      - key: CAL_API_KEY
+        sync: false
+      - key: CAL_EVENT_TYPE_ID
+        sync: false

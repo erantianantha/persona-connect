@@ -1,0 +1,97 @@
+ANANTHA DATTA ERANTI
+Computer Science Student • Full-Stack Developer • AI Enthusiast
+
+Bengaluru, India
+Email: ananthadatta0623@gmail.com
+Phone: +91 9441106406
+GitHub: github.com/erantianantha
+LinkedIn: linkedin.com/in/ananthadattaeranti
+
+PERSONAL PROFILE
+I am a motivated and passionate Computer Science student at Scaler School of Technology, Bengaluru, with a strong academic foundation in data structures, algorithms, and software engineering. I have hands-on experience developing full-stack web applications using the MERN stack, and I am currently building an AI-powered voice calling agent that combines NLP, speech synthesis, and automated workflow design. My core interests span backend engineering, distributed systems, cybersecurity, and the intersection of AI with real-world software applications. I thrive in challenging environments, enjoy collaborative problem-solving, and am committed to continuous learning and growth as a software engineer.
+
+EDUCATION
+Bachelor's Program in Computer Science (2024 – 2028)
+Scaler School of Technology | Bengaluru, India
+
+Relevant Coursework:
+• Data Structures & Algorithms (I–IV)
+• Database Management Systems
+• Operating Systems & Concurrency
+• Computer Networks
+• Low Level Design
+• Machine Learning Foundations
+• Advanced Machine Learning
+• Discrete Mathematics
+• Linear Algebra
+• Probability & Statistics
+
+TECHNICAL SKILLS
+Programming Languages:
+Java • Python • C / C++ • JavaScript • SQL
+
+Web Development:
+HTML • CSS • React • Node.js • Express • MERN Stack
+
+Backend & Databases:
+MongoDB • REST APIs • Spring Boot • Database Management Systems
+
+CS Fundamentals:
+Data Structures & Algorithms • Operating Systems • Computer Networks • System Design
+
+ML & Data:
+Machine Learning • Data Analytics
+
+Developer Tools:
+Git • GitHub • Linux • VS Code
+
+PROJECTS
+
+Voxa – Personal AI Productivity & Automation Assistant (MacOS)(Currently Building)
+Technologies: Python, AI Agents, LLMs, Automation APIs, Email & Calendar Integrations
+Developing an AI-powered desktop assistant for macOS that automates daily workflows and acts as a centralized productivity companion.
+Designed intelligent workflows that review pull requests, monitor emails, track calendar events, and generate prioritized task lists automatically.
+Built context-aware operating modes such as Work Mode and Entertainment Mode to adapt recommendations and actions based on user activities.
+Integrated multiple productivity systems into a single interface, reducing the need to switch between applications and improving workflow efficiency.
+Focused on proactive assistance by summarizing updates, organizing information, and helping users manage daily priorities.
+Leading end-to-end product development, including feature design, automation architecture, AI integration, and user experience planning.
+
+AI Calling Agent (Currently Building)
+Technologies: Python • Speech-to-Text (Whisper/Deepgram) • NLP • Text-to-Speech (ElevenLabs) • Workflow Automation • RAG • Pinecone • Sentence-Transformers • FastAPI • Vapi
+• Building a real-time AI voice calling agent with a full STT → NLP → TTS pipeline.
+• Implemented a Retrieval-Augmented Generation (RAG) system using Pinecone vector database and all-MiniLM-L6-v2 sentence embeddings to ground agent responses in factual candidate data (resume + GitHub project data).
+• Used cross-encoder reranking (ms-marco-MiniLM-L-6-v2) on top of vector search to improve answer relevance before passing context to the LLM.
+• Built a FastAPI backend that serves both the voice agent (Vapi custom LLM endpoint) and a Next.js chat frontend via a shared /retrieve RAG endpoint.
+• Implemented automated workflow design for scheduling and task execution using Cal.com API.
+• Optimising system for low-latency streaming and high concurrent session support.
+
+LexGuard AI – AI-Powered Contract Assistance Platform
+Technologies: Python, FastAPI, React, TypeScript, Google cloud, Gemini AI
+Developed an AI-powered contract intelligence platform that analyzes legal agreements, identifies potential risks, and provides actionable insights for users.
+Built an AI assistant capable of answering contract-related queries and simplifying complex legal information through conversational interactions.
+Optimized the document analysis workflow, improving processing speed and reducing operational costs through efficient AI integration.
+Implemented secure document handling, validation, and real-time progress tracking to enhance user experience and reliability.
+Managed end-to-end development, including research, design, development, testing, deployment, and cloud integration.
+Secured 5th place in a Google AI Hackathon, competing against multiple people by delivering an innovative AI-powered legal assistance solution.
+
+
+AceNset – NSET Exam Preparation Platform
+Built a student-focused platform that consolidated preparation resources, exam insights, and topic-wise guidance for NSET aspirants.
+Researched and organized information into clear, actionable content, demonstrating strong communication and information-management skills.
+Analyzed exam patterns and important topics to create structured preparation pathways for users.
+Independently handled project planning, development, testing, and continuous improvements based on user needs.
+
+
+AREAS OF INTEREST
+Software Engineering • Backend Development • Artificial Intelligence • Distributed Systems • Cybersecurity • Advanced JavaScript • System Design
+
+DEVELOPMENT PRACTICES & SOFT SKILLS
+Technical Practices:
+Version Control (Git/GitHub) • API Integration • Debugging & Profiling • Problem Solving • Agile Development
+Soft Skills:
+Analytical Thinking • Team Collaboration • Self-directed Learning • Attention to Detail • Communication
+
+DECLARATION
+I hereby declare that all the information furnished above is true and accurate to the best of my knowledge. I take full responsibility for the correctness of the stated details.
+Anantha Datta Eranti
+Bengaluru, India

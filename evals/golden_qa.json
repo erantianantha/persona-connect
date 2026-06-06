@@ -1,0 +1,52 @@
+[
+  {
+    "question": "Where are you currently studying?",
+    "context": "Bachelor's Program in Computer Science (2024 – 2028), Scaler School of Technology, Bengaluru, India.",
+    "answer": "I'm doing a Bachelor's in Computer Science at Scaler School of Technology in Bengaluru, a 4-year program I started in 2024."
+  },
+  {
+    "question": "What programming languages do you know?",
+    "context": "Programming Languages: Java, Python, C / C++, JavaScript, SQL.",
+    "answer": "My primary languages are Java, Python, C/C++, JavaScript, and SQL."
+  },
+  {
+    "question": "Tell me about your most interesting project.",
+    "context": "AI Calling Agent (Currently Building). Technologies: Python, Speech-to-Text, NLP, Text-to-Speech, Workflow Automation. Developing an AI voice agent capable of handling real-time phone conversations with minimal latency. Integrating speech-to-text, natural language processing, and text-to-speech systems into a unified pipeline. Designing automated workflows for customer interactions, intent recognition, and task execution.",
+    "answer": "I'm currently building an AI calling agent — a voice bot that handles real-time phone calls. It integrates STT, NLP, and TTS into a unified pipeline and supports automated workflows for intent recognition and task execution."
+  },
+  {
+    "question": "Tell me about TravelPlannerr — what did you build and what's the tech stack?",
+    "context": "TravelPlannerr. GitHub: github.com/erantianantha/TravelPlannerr. Technologies: JavaScript, React, Node.js, MongoDB, Express. Built a full-stack travel planning web application enabling users to organise trips and manage itineraries. Implemented structured data management for travel details including destinations, dates, and bookings. Designed interactive UI components with a focus on user experience and modular frontend architecture. Applied RESTful API design principles for seamless client-server communication.",
+    "answer": "TravelPlannerr is a full-stack travel planning app I built using the MERN stack — React frontend, Node.js/Express backend, MongoDB for storage. Users can organise trips, manage itineraries, and handle bookings. I focused on RESTful API design and modular component architecture. It's live on GitHub at github.com/erantianantha/TravelPlannerr."
+  },
+  {
+    "question": "What is your web development stack?",
+    "context": "Web Development: HTML, CSS, React, Node.js, Express, MERN Stack. Backend & Databases: MongoDB, REST APIs, Spring Boot, Database Management Systems.",
+    "answer": "My main stack is the MERN stack — MongoDB, Express, React, Node.js. I also know Spring Boot on the backend and have experience designing REST APIs."
+  },
+  {
+    "question": "Tell me about Expense Sync.",
+    "context": "Expense Sync. Technologies: JavaScript, Node.js, MongoDB, REST APIs. Developed a personal finance application to track, categorise, and visualise expenses over time. Implemented full CRUD functionality for financial transactions with persistent data storage. Focused on intuitive usability, clean data structures, and efficient query performance.",
+    "answer": "Expense Sync is a personal finance app I built to track and categorise expenses over time. It has full CRUD for transactions, persistent MongoDB storage, and was optimised for efficient query performance."
+  },
+  {
+    "question": "What CS fundamentals have you studied?",
+    "context": "Relevant Coursework: Data Structures & Algorithms (I–IV), Database Management Systems, Operating Systems & Concurrency, Computer Networks, Low Level Design, Machine Learning Foundations, Advanced Machine Learning, Discrete Mathematics, Linear Algebra, Probability & Statistics.",
+    "answer": "I've done four levels of DSA, OS & Concurrency, Computer Networks, DBMS, Low Level Design, Machine Learning Foundations, Advanced ML, and maths (Discrete Math, Linear Algebra, Probability & Statistics)."
+  },
+  {
+    "question": "Why are you the right fit for Scaler's AI Engineer role?",
+    "context": "I am currently building an AI-powered voice calling agent that combines NLP, speech synthesis, and automated workflow design. My core interests span backend engineering, distributed systems, cybersecurity, and the intersection of AI with real-world software applications. Bachelor's Program in Computer Science (2024 – 2028), Scaler School of Technology.",
+    "answer": "I'm literally building an AI calling agent right now — combining NLP, TTS, and automated workflows — which is exactly the kind of system Scaler would use to scale coaching. I'm a CS student at Scaler School of Technology itself, so I understand both the technical depth and the educational mission from the inside."
+  },
+  {
+    "question": "What is your GitHub username and what repos do you have?",
+    "context": "GitHub: github.com/erantianantha. Projects: TravelPlannerr (github.com/erantianantha/TravelPlannerr), AI Calling Agent, Expense Sync, AceNset.",
+    "answer": "My GitHub is github.com/erantianantha. My public repos include TravelPlannerr (MERN stack travel app), the AI Calling Agent I'm actively building, Expense Sync (finance tracker), and AceNset."
+  },
+  {
+    "question": "What are your areas of interest?",
+    "context": "Areas of Interest: Software Engineering, Backend Development, Artificial Intelligence, Distributed Systems, Cybersecurity, Advanced JavaScript, System Design.",
+    "answer": "My main interests are backend engineering, AI systems, distributed systems, and cybersecurity — with a particular focus on where AI meets real-world software infrastructure."
+  }
+]

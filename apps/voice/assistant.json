@@ -1,0 +1,30 @@
+{
+  "name": "AnanthaDatta-AI-Rep",
+  "model": {
+    "provider": "custom-llm",
+    "url": "https://anantha-persona-voice.onrender.com/api/voice-llm",
+    "systemPrompt": "(system prompt is set server-side in main.py — do not duplicate here)"
+  },
+  "voice": {
+    "provider": "11labs",
+    "voiceId": "pNInz6obpgDQGcFmaJgB",
+    "model": "eleven_flash_v2_5",
+    "stability": 0.5,
+    "similarityBoost": 0.75
+  },
+  "transcriber": {
+    "provider": "deepgram",
+    "model": "nova-2",
+    "language": "en",
+    "smartFormat": true
+  },
+  "endpointingConfiguration": {
+    "vadMode": "smart",
+    "silenceTimeoutMs": 300,
+    "speechThreshold": 0.5
+  },
+  "firstMessage": "Hi! I'm the AI representative for Anantha Datta. I can tell you about his background, projects, and skills — or check availability and book an interview. What would you like to know?",
+  "maxDurationSeconds": 600,
+  "serverMessages": ["end-of-call-report", "status-update"],
+  "serverUrl": "https://anantha-persona-voice.onrender.com/api/vapi-webhook"
+}

@@ -1,0 +1,19 @@
+{
+  "name": "ai-persona",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "apps/chat",
+    "packages/calendar_tools"
+  ],
+  "scripts": {
+    "dev":   "concurrently \"cd apps/chat && npm run dev\" \"cd apps/voice && uvicorn main:app --reload --port 8000\"",
+    "build": "cd apps/chat && npm run build",
+    "lint":  "cd apps/chat && npm run lint",
+    "ingest": "python apps/ingest/ingest.py",
+    "eval":  "python evals/run_evals.py"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
