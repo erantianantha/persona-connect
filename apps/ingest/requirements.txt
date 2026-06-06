@@ -5,5 +5,5 @@ pypdf>=4.2.0
 PyGithub>=2.3.0
 langchain-text-splitters>=0.2.1
 pinecone>=4.1.0
-sentence-transformers>=3.0.1
 python-dotenv>=1.0.1
+

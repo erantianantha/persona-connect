@@ -48,25 +48,9 @@ app.add_middleware(
 )
 
 @app.on_event("startup")
-async def warmup_rag_models():
-    """Pre-load + run dummy predictions for embedding & reranker at startup.
-    Eliminates the 90-second cold start on the first real /retrieve call."""
-    import threading
-    def _load():
-        try:
-            from rag.retrieve import _get_embedder, _get_reranker
-            print("[STARTUP] Warming up embedding model...")
-            embedder = _get_embedder()
-            _ = embedder.encode(["warmup"], normalize_embeddings=True)
+async def startup_event():
+    print("[STARTUP] Voice LLM service initialized. Using API embeddings.")
 
-            print("[STARTUP] Warming up reranker model...")
-            reranker = _get_reranker()
-            _ = reranker.predict([("warmup query", "warmup passage")])
-
-            print("[STARTUP] RAG models ready ✓ — first query will be fast")
-        except Exception as e:
-            print(f"[STARTUP] RAG warm-up failed (non-fatal): {e}")
-    threading.Thread(target=_load, daemon=True).start()
 
 # Google Gemini via OpenAI-compatible endpoint (fallback)
 GOOGLE_BASE_URL = "https://generativelanguage.googleapis.com/v1beta/openai/"

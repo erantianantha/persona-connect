@@ -162,7 +162,7 @@ export default function ChatPage() {
       <div key={msg.id} className={`msg-row ${isUser ? "user" : "assistant"}`}>
         {!isUser && (
           <div className="avatar">
-            <span>AI</span>
+            <span>AD</span>
           </div>
         )}
         <div className={`bubble ${isUser ? "bubble-user" : "bubble-assistant"}`}>
@@ -212,8 +212,8 @@ export default function ChatPage() {
         <div className="chat-header">
           <div className="header-avatar">AD</div>
           <div className="header-info">
-            <h1>Anantha Datta Eranti&apos;s AI Representative</h1>
-            <p>CS Student @ Scaler School of Technology · Powered by Gemini &amp; RAG</p>
+            <h1>Anantha Datta Eranti</h1>
+            <p>CS Student · Full-Stack &amp; AI Developer · Scaler School of Technology</p>
           </div>
           <div className="status-dot" title="Online" />
         </div>
@@ -222,13 +222,12 @@ export default function ChatPage() {
         <div className="messages">
           {messages.length === 0 ? (
             <div className="welcome">
-              <div className="welcome-icon">🤖</div>
-              <h2>Hi, I&apos;m Anantha&apos;s AI rep</h2>
+              <div className="welcome-icon">👋</div>
+              <h2>Hey, I&apos;m Anantha!</h2>
               <p>
-                Ask me anything about Anantha Datta Eranti&apos;s background, projects, or tech
-                stack — or check his availability and book an interview directly.
+                CS student at Scaler, building AI systems and full-stack apps.
+                Ask me anything — my projects, my stack, or let&apos;s find a time to chat.
               </p>
-
 
             </div>
           ) : (
@@ -237,7 +236,7 @@ export default function ChatPage() {
 
           {isLoading && (
             <div className="msg-row assistant">
-              <div className="avatar"><span>AI</span></div>
+              <div className="avatar"><span>AD</span></div>
               <div className="bubble bubble-assistant">
                 <div className="typing">
                   <span /><span /><span />
@@ -248,7 +247,7 @@ export default function ChatPage() {
 
           {error && !isLoading && (
             <div className="msg-row assistant">
-              <div className="avatar"><span>AI</span></div>
+              <div className="avatar"><span>AD</span></div>
               <div className="bubble bubble-assistant error-bubble">
                 <p className="error-title">⚠️ Something went wrong</p>
                 <p className="error-detail">
@@ -287,7 +286,7 @@ export default function ChatPage() {
           <form className="input-form" onSubmit={handleSubmit}>
             <textarea
               className="input-field"
-              placeholder={countdown !== null ? `Rate limited — please wait ${countdown}s…` : "Ask about background, projects, or book a meeting…"}
+              placeholder={countdown !== null ? `Rate limited — please wait ${countdown}s…` : "Ask me anything — projects, skills, or schedule a chat…"}
               value={input}
               onChange={handleInputChange}
               rows={1}
@@ -311,7 +310,7 @@ export default function ChatPage() {
             </button>
           </form>
           <p className="input-hint">
-            Shift+Enter for newline · Chat uses RAG over Anantha&apos;s resume &amp; GitHub
+            Chat directly with Anantha&apos;s AI twin · Powered by RAG
           </p>
         </div>
       </div>

@@ -2,12 +2,12 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Anantha Datta Eranti — AI Representative",
+  title: "Anantha Datta Eranti — Chat with Me",
   description:
-    "Chat with Anantha Datta Eranti's AI representative. Ask about his background, projects, AI Calling Agent with RAG, or book an interview directly.",
+    "Chat directly with Anantha Datta Eranti's AI twin. Ask about his projects, skills, background, or book a time to connect. Powered by RAG over his resume and GitHub.",
   openGraph: {
-    title: "Anantha Datta Eranti — AI Representative",
-    description: "AI persona of Anantha Datta Eranti — CS student at Scaler School of Technology building AI voice agents.",
+    title: "Anantha Datta Eranti — Chat with Me",
+    description: "CS student at Scaler building AI voice agents and full-stack systems. Chat with Anantha's AI twin directly.",
     type: "website",
   },
 };
