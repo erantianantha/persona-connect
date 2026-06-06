@@ -67,13 +67,26 @@ def _call_gemini_embed(texts: list[str]) -> list[list[float]]:
     
     payload = {"requests": requests}
     
+    max_retries = 5
+    backoff = 3.0
+    
     with httpx.Client(timeout=30.0) as client:
-        response = client.post(url, json=payload)
-        response.raise_for_status()
-        data = response.json()
+        for attempt in range(max_retries):
+            response = client.post(url, json=payload)
+            if response.status_code == 429:
+                print(f"[RAG] 429 rate limit hit. Retrying in {backoff:.1f}s (attempt {attempt + 1}/{max_retries})...")
+                time.sleep(backoff)
+                backoff *= 2.0
+                continue
+            response.raise_for_status()
+            data = response.json()
+            break
+        else:
+            response.raise_for_status()
         
     embeddings = [emb.get("values", []) for emb in data.get("embeddings", [])]
     return embeddings
+
 
 # ──────────────────────────────────────────────
 # Public API
